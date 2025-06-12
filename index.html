@@ -5,13 +5,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" type="text/css" href="./slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick-theme.css" />
     <title>Certificado A3 PF</title>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <a href="https://certifica.com.br/">
+            <a href="#">
                 <img src="./assets/logo-certifica.png" alt="Logomarca Certifica" />
             </a>
             <nav>
@@ -41,7 +43,7 @@
                         </div>
                     </div>
                     <div class="form-card">
-                        <form action="">
+                        <form action="" id="purchase-form">
                             <div class="form-container">
                                 <div class="form-fields">
                                     <div class="form-field">
@@ -87,7 +89,7 @@
                         </div>
                     </div>
                     <div class="form-card">
-                        <form action="">
+                        <form action="submit">
                             <div class="form-container">
                                 <div class="form-fields">
                                     <div class="form-field">
@@ -329,9 +331,9 @@
             <h3 class="suptitle">Depoimentos</h3>
             <h2>O que dizem sobre o certificado A3<br />em nuvem da Certifica</h2>
         </div>
-        <div class="container testimony-slider">
-            <div class="testimony-pair-slider">
-                <div class="testimony-pair">
+        <div class="container testimony-slider swiper">
+            <div class="testimony-pair-slider swiper-wrapper">
+                <div class="testimony-pair slide3" id="testimony-pair">
                     <div class="testimony-card">
                         <div class="testimony-art">
                             <img src="assets/06-1.png" />
@@ -352,7 +354,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimony-card">
+                    <div class="testimony-card tablet-only desktop-only lg-tablet-hide">
                         <div class="testimony-art">
                             <img src="assets/06-1.png" />
                         </div>
@@ -373,8 +375,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimony-pair">
-                    <div class="testimony-card">
+                <div class="testimony-pair slide2" id="testimony-pair">
+                    <div class=" testimony-card">
                         <div class="testimony-art">
                             <img src="assets/06-1.png" />
                         </div>
@@ -394,7 +396,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimony-card">
+                    <div class="testimony-card tablet-only desktop-only lg-tablet-hide">
                         <div class="testimony-art">
                             <img src="assets/06-1.png" />
                         </div>
@@ -415,8 +417,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimony-pair">
-                    <div class="testimony-card">
+                <div class="testimony-pair slide1" id="testimony-pair">
+                    <div class=" testimony-card">
                         <div class="testimony-art">
                             <img src="assets/06-1.png" />
                         </div>
@@ -436,7 +438,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimony-card">
+                    <div class="testimony-card tablet-only desktop-only lg-tablet-hide">
                         <div class="testimony-art">
                             <img src="assets/06-1.png" />
                         </div>
@@ -460,13 +462,14 @@
             </div>
         </div>
         <div class="container slider-buttons">
-            <button id="slider-prev">
+            <button id="slider-prev" class=".swiper-button-prev">
                 <img src="assets/left.png" />
             </button>
-            <button id="slider-next">
+            <button id="slider-next" class=".swiper-button-next">
                 <img src="assets/right.png" />
             </button>
         </div>
+    </div>
     </div>
     <div class="section section4">
         <div class="container about-header">
@@ -518,87 +521,89 @@
                     processo de compra mais simples e direto.<br /><br />Se ainda
                     precisar de ajuda, nossa equipe está pronta para te apoiar!
                 </p>
-                <a class="orange cta-button">Ir para suporte</a>
+                <a href="#" class="orange cta-button">Ir para suporte</a>
             </div>
             <div class="faq-topics">
-                <div class="faq-topic">
-                    <div class="faq-topic-header">
-                        <span>O que é o Certificado Digital A3?</span>
-                        <div class="topic-open-icon">
-                            <img src="./assets/plus.png" class="topic-open-icon-img" />
+                <div class="topics-accordion">
+                    <div class="faq-topic">
+                        <div class="faq-topic-header">
+                            <span>O que é o Certificado Digital A3?</span>
+                            <div class="topic-open-icon">
+                                <img src="./assets/minus.png" class="topic-open-icon-img" />
+                            </div>
+                        </div>
+                        <div class="faq-topic-text first-topic">
+                            <p>
+                                Com 11 anos de atuação no mercado, a Certifica oferece soluções
+                                que vão muito além de certificados digitais. São diversos
+                                produtos para facilitar a sua rotina e a de seus clientes, como
+                                o CertificaSigner, o Emissor de NFe, o Plick e o Docnuvem. Com
+                                solidez e uma trajetória marcada pela inovação e foco no
+                                cliente, a Certifica emite mais de 250 mil certificados ao mês,
+                                possui mais de 327 Autoridades de Registro e mais de 7 mil
+                                unidades em todos os estados do país.
+                            </p>
                         </div>
                     </div>
-                    <div class="faq-topic-text">
-                        <p>
-                            Com 11 anos de atuação no mercado, a Certifica oferece soluções
-                            que vão muito além de certificados digitais. São diversos
-                            produtos para facilitar a sua rotina e a de seus clientes, como
-                            o CertificaSigner, o Emissor de NFe, o Plick e o Docnuvem. Com
-                            solidez e uma trajetória marcada pela inovação e foco no
-                            cliente, a Certifica emite mais de 250 mil certificados ao mês,
-                            possui mais de 327 Autoridades de Registro e mais de 7 mil
-                            unidades em todos os estados do país.
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-topic">
-                    <div class="faq-topic-header">
-                        <span>Como ele pode ser usado em nuvem?</span>
-                        <div class="topic-open-icon">
-                            <img src="./assets/plus.png" class="topic-open-icon-img" />
+                    <div class="faq-topic">
+                        <div class="faq-topic-header">
+                            <span>Como ele pode ser usado em nuvem?</span>
+                            <div class="topic-open-icon">
+                                <img src="./assets/plus.png" class="topic-open-icon-img" />
+                            </div>
+                        </div>
+                        <div class="faq-topic-text">
+                            <p>
+                                Com 11 anos de atuação no mercado, a Certifica oferece soluções
+                                que vão muito além de certificados digitais. São diversos
+                                produtos para facilitar a sua rotina e a de seus clientes, como
+                                o CertificaSigner, o Emissor de NFe, o Plick e o Docnuvem. Com
+                                solidez e uma trajetória marcada pela inovação e foco no
+                                cliente, a Certifica emite mais de 250 mil certificados ao mês,
+                                possui mais de 327 Autoridades de Registro e mais de 7 mil
+                                unidades em todos os estados do país.
+                            </p>
                         </div>
                     </div>
-                    <div class="faq-topic-text">
-                        <p>
-                            Com 11 anos de atuação no mercado, a Certifica oferece soluções
-                            que vão muito além de certificados digitais. São diversos
-                            produtos para facilitar a sua rotina e a de seus clientes, como
-                            o CertificaSigner, o Emissor de NFe, o Plick e o Docnuvem. Com
-                            solidez e uma trajetória marcada pela inovação e foco no
-                            cliente, a Certifica emite mais de 250 mil certificados ao mês,
-                            possui mais de 327 Autoridades de Registro e mais de 7 mil
-                            unidades em todos os estados do país.
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-topic">
-                    <div class="faq-topic-header">
-                        <span>Qual a diferença do certificado digital A1 e A3?</span>
-                        <div class="topic-open-icon">
-                            <img src="./assets/plus.png" class="topic-open-icon-img" />
+                    <div class="faq-topic">
+                        <div class="faq-topic-header">
+                            <span>Qual a diferença do certificado digital A1 e A3?</span>
+                            <div class="topic-open-icon">
+                                <img src="./assets/plus.png" class="topic-open-icon-img" />
+                            </div>
+                        </div>
+                        <div class="faq-topic-text">
+                            <p>
+                                Com 11 anos de atuação no mercado, a Certifica oferece soluções
+                                que vão muito além de certificados digitais. São diversos
+                                produtos para facilitar a sua rotina e a de seus clientes, como
+                                o CertificaSigner, o Emissor de NFe, o Plick e o Docnuvem. Com
+                                solidez e uma trajetória marcada pela inovação e foco no
+                                cliente, a Certifica emite mais de 250 mil certificados ao mês,
+                                possui mais de 327 Autoridades de Registro e mais de 7 mil
+                                unidades em todos os estados do país.
+                            </p>
                         </div>
                     </div>
-                    <div class="faq-topic-text">
-                        <p>
-                            Com 11 anos de atuação no mercado, a Certifica oferece soluções
-                            que vão muito além de certificados digitais. São diversos
-                            produtos para facilitar a sua rotina e a de seus clientes, como
-                            o CertificaSigner, o Emissor de NFe, o Plick e o Docnuvem. Com
-                            solidez e uma trajetória marcada pela inovação e foco no
-                            cliente, a Certifica emite mais de 250 mil certificados ao mês,
-                            possui mais de 327 Autoridades de Registro e mais de 7 mil
-                            unidades em todos os estados do país.
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-topic">
-                    <div class="faq-topic-header">
-                        <span>Como posso usar as mídias do certificado A3?</span>
-                        <div class="topic-open-icon">
-                            <img src="./assets/plus.png" class="topic-open-icon-img" />
+                    <div class="faq-topic">
+                        <div class="faq-topic-header">
+                            <span>Como posso usar as mídias do certificado A3?</span>
+                            <div class="topic-open-icon">
+                                <img src="./assets/plus.png" class="topic-open-icon-img" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="faq-topic-text">
-                        <p>
-                            Com 11 anos de atuação no mercado, a Certifica oferece soluções
-                            que vão muito além de certificados digitais. São diversos
-                            produtos para facilitar a sua rotina e a de seus clientes, como
-                            o CertificaSigner, o Emissor de NFe, o Plick e o Docnuvem. Com
-                            solidez e uma trajetória marcada pela inovação e foco no
-                            cliente, a Certifica emite mais de 250 mil certificados ao mês,
-                            possui mais de 327 Autoridades de Registro e mais de 7 mil
-                            unidades em todos os estados do país.
-                        </p>
+                        <div class="faq-topic-text">
+                            <p>
+                                Com 11 anos de atuação no mercado, a Certifica oferece soluções
+                                que vão muito além de certificados digitais. São diversos
+                                produtos para facilitar a sua rotina e a de seus clientes, como
+                                o CertificaSigner, o Emissor de NFe, o Plick e o Docnuvem. Com
+                                solidez e uma trajetória marcada pela inovação e foco no
+                                cliente, a Certifica emite mais de 250 mil certificados ao mês,
+                                possui mais de 327 Autoridades de Registro e mais de 7 mil
+                                unidades em todos os estados do país.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="faq-cta">
@@ -610,120 +615,130 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-
     <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/slick.js"></script>
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/messages_pt_BR.min.js"></script>
+
     <script>
         $(document).ready(function () {
-            console.log("yooooo");
-            // $('#carousel-images').slick({})
 
-            console.log("yaaa");
-            // $(".testimony-pair-slider").slick({
-            //     slide: '.testimony-pair',
-            //     rows: 1,
-            //     speed: 100,
-            //     dots: true,
-            //     infinite: true,
-            //     slidesToShow: 1,
-            //     slidesToScroll: 1,
-            //     autoplay: true,
-            //     nextArrow: '#slider-next',
-            //     prevArrow: '#slider-prev'
-            // });
-
-            // $('.testimony-pair-slider').slick('slickFilter', function() { return $('.testimony-pair', this).length === 1; });
-
-            let currentIndex = 0;
-
-            let $carousel = $('.testimony-pair-slider');
-                let $carouselItems = $('.testimony-slider');
-                let itemWidth = $carouselItems.width() * 1.008;
-                let totalItems = 3;
-
-            window.addEventListener('resize', function(event) {
-                $carousel = $('.testimony-pair-slider');
-                $carouselItems = $('.testimony-pair');
-                itemWidth = $carouselItems.width() * 1.000;
-                totalItems = 3;
-});
-  
-
-  $('#slider-prev').click(function() {
-    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-    updateCarousel();
-  });
-
-  $('#slider-next').click(function() {
-    currentIndex = (currentIndex + 1) % totalItems;
-    console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
-    updateCarousel();
-  });
-
-  function updateCarousel() {
-    $carousel.css('transform', `translateX(-${currentIndex * itemWidth}px)`);
-  }
-
-            // $(".testimony-pair").css({"display":"flex", "flex-direction":"row"})
-
-            $(".menu-hamburger").click(function () {
-                $("nav").slideToggle();
-            });
-            console.log($("#carousel-images"));
-
-            $("#telefone").mask("(00) 00000-0000");
-
-            $("form").validate({
-                rules: {
-                    nome: {
-                        required: true,
-                    },
-                    email: {
-                        required: true,
-                        email: true,
-                    },
-                    telefone: {
-                        required: true,
-                    },
-                    mensagem: {
-                        required: true,
-                    },
-                    veiculoDeInteresse: {
-                        required: false,
-                    },
+            $('.testimony-pair-slider').slick({
+                slides: '#testimony-pair',
+                dots: true,
+                pagination: true,
+                rows: 1,
+                slidesPerRow: 1,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                infinite: true,
+                speed: 1000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                nextArrow: $('#slider-next'),
+                prevArrow: $('#slider-prev'),
+                dots: true,
+                focusOnSelect: true,
+                dotsClass: 'testimony-pagination',
+                customPaging: function () {
+                    return '<div class="testimony-page"></div>'
                 },
-                messages: {
-                    nome: "Por favor, insira o seu nome",
-                },
-                submitHandler: function (form) {
-                    console.log(form);
-                },
-                invalidHandler: function (evento, validador) {
-                    let camposIncorretos = validador.numberOfInvalids();
-                    if (camposIncorretos) {
-                        alert(`Existem ${camposIncorretos} campos incorretos`);
-                    }
-                },
-            });
-
-            $(".lista-veiculos button").click(function () {
-                const destino = $("#contato");
-                const nomeVeiculo = $(this).parent().find("h3").text();
-
-                $("#veiculo-interesse").val(nomeVeiculo);
-
-                $("html").animate(
+                responsive: [
                     {
-                        scrollTop: destino.offset().top,
+                        breakpoint: 1631,
+                        settings: {
+                            arrows: true,
+                            slidesToShow: 1
+                        }
                     },
-                    1000
-                );
+                    {
+                        breakpoint: 1149,
+                        settings: {
+                            arrows: true,
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        breakpoint: 853,
+                        settings: {
+                            arrows: true,
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        breakpoint: 580,
+                        settings: {
+                            arrows: true,
+                            slidesToShow: 1
+                        }
+                    }
+                ]
             });
+
+            $('.topics-accordion').click(function (event) {
+                const clickedTopic = $(event.target).not('.faq-topic-text').parents('.faq-topic').children('.faq-topic-text');
+                const openTopics = $('.faq-topic-text:visible')
+
+                $(openTopics).not(clickedTopic).slideUp();
+                $(openTopics).addClass("closed-topics")
+
+                clickedTopic.slideToggle();
+                clickedTopic.prev('.faq-topic-header').find('.topic-open-icon > img').attr("src", "./assets/minus.png")
+
+                $('.closed-topics').each(function (i, el) {
+                    $(el).prev('.faq-topic-header').find('.topic-open-icon > img').attr("src", "./assets/plus.png")
+                    $(el).removeClass("closed-topics")
+                })
+            });
+
+
+            $('.form-container').on("input", function (el) {
+                const lifespanVal = $('#validade').val()
+                const midiaTypeVal = $('#midia').val()
+                const resultVal = `${lifespanVal} ${midiaTypeVal}`
+                let resultEl = $('#result').children('span')
+                switch (resultVal) {
+                    case "1 ano sem midia":
+                        return resultEl.text("R$ 160,00")
+                        break;
+                    case "2 ano sem midia":
+                        return $(resultEl).text("R$ 205,00")
+                        break;
+                    case "3 ano sem midia":
+                        return $(resultEl).text("R$ 245,00")
+                        break;
+                    case "1 ano cartao":
+                        return resultEl.text("R$ 200,00")
+                        break;
+                    case "2 ano cartao":
+                        return resultEl.text("R$ 230,00")
+                        break;
+                    case "3 ano cartao":
+                        return resultEl.text("R$ 290,00")
+                        break;
+                    case "1 ano token":
+                        return resultEl.text("R$ 255,00")
+                        break;
+                    case "2 ano token":
+                        return $(resultEl).text("R$ 305,00")
+                        break;
+                    case "3 ano token":
+                        return $(resultEl).text("R$ 355,00")
+                        break;
+                    case "1 ano cartao-leitora":
+                        return resultEl.text("R$ 310,00")
+                        break;
+                    case "2 ano cartao-leitora":
+                        return resultEl.text("R$ 330,00")
+                        break;
+                    case "3 ano cartao-leitora":
+                        return resultEl.text("R$ 350,00")
+                        break;
+                    default:
+                        return resultEl.text("R$ 160,00")
+                        break;
+                }
+            })
         });
     </script>
 </body>
