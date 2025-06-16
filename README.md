@@ -1,9 +1,5 @@
 # 72 hours landing page project: Figma + Code
 
-View the page at:
-
-https://j-fborges.github.io/teste-certifica/
-
 A responsive landing page project made in 72 hours including:
 
  - Wireframe and Figma Models;
@@ -12,6 +8,10 @@ A responsive landing page project made in 72 hours including:
 ## Stack used:
 
 **HTML, Javascript, JQuery, Slick-Carousel**
+
+### View the page at:
+
+https://j-fborges.github.io/teste-certifica/
 
 ### Figma Model (Desktop & Mobile):
 
