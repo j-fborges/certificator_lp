@@ -662,7 +662,7 @@ form {
   align-self: center;
 }
 
-.testimony-pagination > li {
+.testimony-pagination>li {
   list-style-type: none;
   height: 12px;
   width: 12px;
@@ -2099,7 +2099,7 @@ form {
     width: 100%;
   }
 
-  
+
 }
 
 @media only screen and (min-width: 1361px) {
